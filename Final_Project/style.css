@@ -1,0 +1,499 @@
+
+body {
+  min-width: 750px;
+  margin: 0px 0px;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: orange;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ________________________________________________HEADER___________________________________________________*/
+
+header {
+  background-image: url("imgs/back1.jpg");
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 680px;
+  opacity: 0.99;
+}
+
+.details {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+}
+
+.web-word {
+  color: orange;
+}
+
+.details > span {
+  /* I need only two the direct spans in the div */
+  display: block;
+  font-size: 40px;
+  color: orangered;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  margin-top: -1px;
+  z-index: 100;
+  width: 100%;
+  background-color: #333;
+}
+
+.logo {
+  display: inline;
+  float: left;
+  z-index: 90;
+  color: white;
+  letter-spacing: 1px;
+  font-size: x-large;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+
+.logo::first-letter {
+  border: 1px solid white;
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-right: 3px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logo::after {
+  content: " Al-Ghussain";
+  color: orange;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: rgb(255, 166, 0);
+}
+
+/* ________________________________________________ABOUT US___________________________________________________*/
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding: 30px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.about-text {
+  float: left;
+  width: 50%;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: gray;
+}
+
+.about-imag {
+  position: relative;
+  float: left;
+  width: 44%;
+  margin: 0 4% 0 2%;
+}
+
+.about-imag img {
+  width: 500px;
+  float: right;
+}
+
+/* ________________________________________________SKILLS___________________________________________________*/
+
+.skills {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-color: #eee;
+  padding: 30px;
+}
+
+.skills-text {
+  float: left;
+  width: 50%;
+  font-size: 1.5em;
+}
+
+.contact {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: green;
+  border: green 3px solid;
+  font-weight: bold;
+}
+
+.contact:hover {
+  background-color: green;
+  color: white;
+}
+
+.progress {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.bar {
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  height: 50px;
+  background-color: white;
+  padding: 15px;
+}
+
+.html-bar {
+  top: 15%;
+}
+
+.lan-name {
+  position: absolute;
+  top: 30%;
+  left: 6%;
+  float: left;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.fill {
+  position: relative;
+  height: 50%;
+  width: 80%;
+  float: right;
+  top: 20%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.value{
+  position: absolute;
+  height: 100%;
+  background-color: rgb(255, 166, 0);
+  border-radius: 5px;
+}
+
+.html-value {
+  animation: html-progress-animation 5s forwards;
+}
+
+@keyframes html-progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.css-bar {
+  top: 40%;
+}
+
+.css-value {
+  animation: css-progress-animation 5s forwards;
+}
+
+@keyframes css-progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.js-bar {
+  top: 65%;
+}
+
+.js-name {
+  position: absolute;
+  top: 33%;
+  left: 1%;
+  float: left;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.js-value {
+  animation: js-progress-animation 5s forwards;
+}
+
+@keyframes js-progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* ________________________________________________Projects___________________________________________________*/
+.line{
+  width: 10%;
+  border-bottom: 5px solid orange;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+.projects {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  padding: 5%;
+}
+
+.centered-h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+}
+
+.project {
+  position: relative;
+  width: 30%;
+  height: 45%;
+  float: left;
+  border: 2px groove #eee;
+  margin: 0 1% 1% 0;
+  background-color: #eee;
+}
+
+.project-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  margin: 0%;  
+  transition: 2s;
+}
+
+.project>span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: orange;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.project span>span{
+  position: absolute;
+  top: 45%;
+}
+
+.project-img:hover {
+  opacity: 0.2;
+}
+
+/* ________________________________________________Customers___________________________________________________*/
+
+.customers {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  padding: 2%;
+  background-color: #eee;
+}
+
+
+.customer {
+  width: 30%;
+  height: 80%;
+  float: left;
+  margin: 20px;
+  text-align-last: center;
+}
+
+.customer img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid goldenrod;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+
+.customer img:hover {
+  opacity: 1;
+}
+
+.customer h3 {
+  color: blueviolet;
+  text-align: center;
+}
+
+/* ________________________________________________Contact Us___________________________________________________*/
+
+.contact-us {
+  width: 100%;
+  height: 500px;
+  background-image: url("imgs/map.jpg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: top;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  margin-top: 8%;
+}
+/* 
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+.form,.textarea {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+textarea{
+    background-color: #eee;
+    border-width: 0;
+    font-size: 1.3em;
+}
+
+form input {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 30px;
+  background-color: #eee;
+  border-width: 0;
+  font-size: 1.27em;
+}
+
+form input[type="submit"]{
+    background-color: orange;
+    color: white;
+    width: 101%;
+    font-size: 1.1em;
+}
+form input[type="submit"]:hover{
+  color: orange;
+  background-color: white;
+  border: 2px solid orange;
+}
+
+input::placeholder{
+    font-size: 1em;
+}
+
+/* ________________________________________________Footer___________________________________________________*/
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #333;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    color: white;
+}
+
+.footer p{
+  text-shadow:white 0px 10px 40px ;
+}
+
+.soical{
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.soical a{
+    display: inline-block;
+    margin: 5px;
+    opacity: 1;
+}
+
+
+.soical a:hover{
+  opacity: 0.7;
+}
+
+/* ____________Top Button____________ */
+
+#top{
+    position: fixed;
+    /* display: none; */
+    bottom: 2%;
+    right: 1%;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    z-index: 50;
+    border: 0;
+    border-radius: 20%;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+    display: none;
+
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+#top:hover{
+    transform: scale(1);
+}
